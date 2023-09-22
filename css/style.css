@@ -9,7 +9,8 @@ img { max-width: 100%;
       height: calc(100% / 5);}
 
 body {background-color: black;
-      font-family: sans-serif;}
+      font-family: sans-serif;
+       }
 
 a {
     text-decoration: none;
@@ -28,7 +29,7 @@ a {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -42,14 +43,20 @@ a {
 
 
 .column {
-    width: calc(90% / 7);
+    width: calc(100% / 7);
 }
 
 .card {
     display: flex;
     position: relative;
+    /* filter: blur(5px);
+    transition: 1s;
+     */
 
 }
+/* .card:hover {
+    filter: blur(0);
+} */
 
 .name-user {
     position: absolute;
@@ -72,8 +79,35 @@ a {
     justify-content: space-between;
     bottom: 0;
     left: 0;
+    /* animation-name: change-color;
+    animation-duration: 10s;
+    animation-delay: 2s; */
 }
 
+/* @keyframes change-color {
+
+    0% {
+        background-color: rgb(182, 240, 89);
+    }
+
+    15% {
+        background-color: rgb(14, 204, 56);
+    }
+
+    55% {
+        background-color: rgb(47, 14, 137);
+    }
+
+    75% {
+        background-color: rgba(6, 104, 66, 0.973);
+    }
+
+    100% {
+        background-color: rgba(7, 145, 214, 0.973);
+
+    }
+    
+} */
 
 ul li {
     display: inline-block;
@@ -81,8 +115,9 @@ ul li {
     color: white;
     font-size: 1rem;
     padding: 0 .8rem;
-
+    transition: 1s;
 }
+
 
 li:hover {
     color: red;
@@ -95,6 +130,7 @@ li:hover {
 .cam {
     width: 10%;
     text-align: center;
+  
 }
 
 .end-call {
@@ -105,11 +141,19 @@ li:hover {
     font-size: 1rem;
     color: red;
     font-weight: bold;
+    transition: 1s;
 }
 
 #share {
     color: green;
     font-size: 1.2rem;
+    transition: 1s;
+
+    
+}
+
+#share:hover {
+    color: rgb(5, 253, 5);
 }
 
 #angle-up {
